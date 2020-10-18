@@ -1,0 +1,152 @@
+<style>
+h1{
+	color: gray;
+	font-family: Hectivia;
+}
+</style>
+
+<h1>Color Bar Animation</h1>
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+    }
+    25% {
+      background-color: red;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: pink;
+    }
+    100% {
+      background-color: yellow;
+    }
+  
+
+
+</style>
+<div id="rect"></div>
+
+<h1>Moving Color Bar Animation</h1>
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect1 {
+    animation-name: rainbow1;
+    animation-duration: 4s;
+animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow1 {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left: 0px;
+
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 25px;
+
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+
+    }
+  }
+</style>
+
+<div id="rect1"></div>
+
+<h1>Changing Ball Animation</h1>
+
+<style>
+
+  #ball {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+animation-iteration-count: infinite;
+  }
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+      opacity: 0.1;
+
+    }
+  }
+
+</style>
+
+<div id="ball"></div>
+
+<style>
+
+  #ballb {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+</style>
+<div id="ballb"></div>

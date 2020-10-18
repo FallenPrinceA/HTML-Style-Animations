@@ -1,0 +1,95 @@
+<style>
+h1 {
+	color: pink;
+}
+</style>
+<h1>Radio Buttons</h1>
+<form>
+        <fieldset>
+        <legend>What kind of books do you want recommended?</legend>
+        <input id="Dark Fantasy" type="radio" name="genre" value="Dark_Fantasy">
+        <label for="dark_fantasy">Dark Fantasy</label><br>
+        
+	<input id="horror" type="radio" name="genre" value="Horror">
+        <label for="horror">Horror</label><br>
+        
+	<input id="romance" type="radio" name="romance" value="Romance">
+        <label for="romance">Romance</label>
+        </fieldset>
+  </form>
+
+<h1>Date Input</h1>
+  <main>
+    <section>
+      <h2>RoyalReader Writing Challenge Survey</h2>
+      <form>
+        <p>Tell us the best date for the competition</p>
+        <label for="pickdate">Preferred Date:</label>
+
+<label for="tournamentdate">Enter a date:</label>
+<input type="date" id="pickdate" name="date">
+
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>&copy; 2020 RoyalReader</footer>
+</body>
+
+<p>Thank you to everyone for responding to Fallen Prince Alastor's survey. 
+The best day to host the RoyalReader Writing Challenge is <time datetime="2020-12-16">Thursday, December 16<sup>th</sup></time>. 
+May the best writer win!</p>
+
+<head>
+  <style>
+  p:focus {
+    background-color: yellow;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RoyalReader Book Survey</h1>
+  </header>
+  <section>
+    <form>
+
+
+      <p tabindex="0">Instructions: Fill in ALL your information then click <b>Submit</b></p>
+
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+      <fieldset>
+        <legend>What's your favorite book?</legend>
+        <input id="king" type="radio" name="king" value="king">
+        <label for="king">DxD Heavenly Dragon Kings</label><br>
+        
+	<input id="twirl" type="radio" name="twirl" value="twirl">
+        <label for="twirl">Twirl in the Twilight Nightmare</label><br>
+        
+	<input id="shadows" type="radio" name="shadows" value="shadows">
+        <label for="master">Heart of Shadows: Birth of Darkness</label>
+      </fieldset>
+      <br>
+      <fieldset>
+      <legend>Select your favorite genres:</legend>
+      <input id="darkfantasy" type="checkbox" name="genre" value="darkfantasy">
+      <label for="darkfantasy">Dark Fantasy</label><br>
+      
+	<input id="horror" type="checkbox" name="genre" value="horror">
+      <label for="horror">Horror</label><br>
+      
+	<input id="supernatural" type="checkbox" name="genre" value="supernatural">
+      <label for="supernatural">Supernatural</label><br>
+      
+	<input id="romance" type="checkbox" name="genre" value="romance">
+      <label for="romance">Romance</label>
+      </fieldset>
+      <br>
+      <input type="submit" name="submit" value="Submit">
+    </form><br>
+  </section>
+  <footer>&copy; 20202 Royal Reader</footer>
+</body>
+
